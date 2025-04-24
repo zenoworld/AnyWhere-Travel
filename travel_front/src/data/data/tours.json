@@ -1,0 +1,326 @@
+[
+    {
+      "title": "Westminister Bridge",
+      "city": "London",
+      "address": "Somewhere in London",
+      "distance": 300,
+      "price": 99,
+      "maxGroupSize": 10,
+      "desc": "this is the description",
+      "reviews": [],
+  
+      "photo": "/tour-images/tour-img01.jpg",
+      "featured": true
+    },
+    {
+      "title": "Bali, Indonesia",
+      "city": "Bali",
+      "address": "Somewhere in Indonesia",
+      "distance": 400,
+      "price": 99,
+      "maxGroupSize": 8,
+      "desc": "this is the description",
+      "reviews": [],
+  
+      "photo": "/tour-images/tour-img02.jpg",
+      "featured": true
+    },
+    {
+      "title": "Snowy Mountains, Thailand",
+      "city": "Bangkok",
+      "address": "Somewhere in Thailand",
+      "distance": 500,
+      "price": 99,
+      "maxGroupSize": 8,
+      "desc": "this is the description",
+      "reviews": [],
+  
+      "photo": "/tour-images/tour-img03.jpg",
+      "featured": true
+    },
+    {
+      "title": "Beautiful Sunrise, Thailand",
+      "city": "Phuket",
+      "address": "Somewhere in Thailand",
+      "distance": 500,
+      "price": 99,
+      "maxGroupSize": 8,
+      "desc": "this is the description",
+      "reviews": [],
+  
+      "photo": "/tour-images/tour-img04.jpg",
+      "featured": true
+    },
+    {
+      "title": "Nusa Pendia Bali, Indonesia",
+      "city": "Bali",
+      "address": "Somewhere in Indonesia",
+      "distance": 500,
+      "price": 99,
+      "maxGroupSize": 8,
+      "desc": "this is the description",
+      "reviews": [],
+  
+      "photo": "/tour-images/tour-img05.jpg",
+      "featured": true
+    },
+    {
+      "title": "Cherry Blossoms Spring",
+      "city": "Tokyo",
+      "address": "Somewhere in Japan",
+      "distance": 500,
+      "price": 99,
+      "maxGroupSize": 8,
+      "desc": "this is the description",
+      "reviews": [],
+  
+      "photo": "/tour-images/tour-img06.jpg",
+      "featured": true
+    },
+    {
+      "title": "Holmen Lofoten, France",
+      "city": "Paris",
+      "address": "Somewhere in France",
+      "distance": 500,
+      "price": 99,
+      "maxGroupSize": 8,
+      "desc": "this is the description",
+      "reviews": [],
+  
+      "photo": "/tour-images/tour-img07.jpg",
+      "featured": true
+    },
+    {
+      "title": "green Mountains, Thailand",
+      "city": "Bangkok",
+      "address": "Somewhere in Thailand",
+      "distance": 500,
+      "price": 99,
+      "maxGroupSize": 8,
+      "desc": "this is the description",
+      "reviews": [],
+  
+      "photo": "/tour-images/tour-img03.jpg",
+      "featured": true
+    },
+    {
+      "title": "Jaflong, Sylhet",
+      "city": "Sylhet",
+      "address": "Somewhere in Sylhet",
+      "distance": 100,
+      "price": 99,
+      "maxGroupSize": 5,
+      "desc": "this is the description",
+      "reviews": [],
+  
+      "photo": "/tour-images/tour-img08.jpg",
+      "featured": false
+    },
+    {
+      "title": "Cox's Bazar Sea Beach",
+      "city": "Chittagong",
+      "address": "Somewhere in Chittagong",
+      "distance": 500,
+      "price": 99,
+      "maxGroupSize": 8,
+      "desc": "this is the description",
+      "reviews": [],
+  
+      "photo": "/tour-images/tour-img09.jpg",
+      "featured": false
+    },
+    {
+      "title": "Thames River Cruise",
+      "city": "London",
+      "address": "Tower Pier, London, UK",
+      "distance": 500,
+      "price": 85,
+      "maxGroupSize": 20,
+      "desc": "Enjoy a scenic cruise along the Thames River, witnessing London's iconic landmarks like the Tower Bridge and Big Ben.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour1.jpg",
+      "featured": true
+    },
+    {
+      "title": "Paris City Lights Tour",
+      "city": "Paris",
+      "address": "Place Charles de Gaulle, Paris, France",
+      "distance": 200,
+      "price": 150,
+      "maxGroupSize": 25,
+      "desc": "Explore the romantic City of Light by night, including stops at the Eiffel Tower and the Seine River.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour2.jpg",
+      "featured": false
+    },
+    {
+      "title": "Venetian Gondola Experience",
+      "city": "Venice",
+      "address": "San Marco Square, Venice, Italy",
+      "distance": 300,
+      "price": 180,
+      "maxGroupSize": 6,
+      "desc": "Experience Venice from its historic canals with a guided gondola ride through the city's waterways.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour3.jpg",
+      "featured": true
+    },
+    {
+      "title": "Swiss Alps Adventure",
+      "city": "Zurich",
+      "address": "Central Train Station, Zurich, Switzerland",
+      "distance": 600,
+      "price": 220,
+      "maxGroupSize": 12,
+      "desc": "Embark on a journey through the breathtaking Swiss Alps with hiking, sightseeing, and unforgettable views.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour4.jpg",
+      "featured": false
+    },
+    {
+      "title": "Northern Lights Expedition",
+      "city": "Reykjavik",
+      "address": "Harpa Concert Hall, Reykjavik, Iceland",
+      "distance": 500,
+      "price": 200,
+      "maxGroupSize": 10,
+      "desc": "Witness the magical Aurora Borealis on a guided expedition through Iceland's serene landscapes.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour5.png",
+      "featured": true
+    },
+    {
+      "title": "Safari in Serengeti",
+      "city": "Arusha",
+      "address": "Arusha, Tanzania",
+      "distance": 800,
+      "price": 400,
+      "maxGroupSize": 20,
+      "desc": "Explore the vast wilderness of the Serengeti National Park and witness the majestic wildlife in its natural habitat.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour6.png",
+      "featured": true
+    },
+    {
+      "title": "Sydney Harbor Kayak Tour",
+      "city": "Sydney",
+      "address": "Sydney Opera House, Sydney, Australia",
+      "distance": 300,
+      "price": 75,
+      "maxGroupSize": 8,
+      "desc": "Paddle through the iconic Sydney Harbor and enjoy unique views of the Sydney Opera House and Harbor Bridge.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour7.jpg",
+      "featured": false
+    },
+    {
+      "title": "Cape Town Coastal Drive",
+      "city": "Cape Town",
+      "address": "V&A Waterfront, Cape Town, South Africa",
+      "distance": 400,
+      "price": 140,
+      "maxGroupSize": 18,
+      "desc": "Drive along the stunning coastline of Cape Town, including stops at Chapman's Peak and the Cape of Good Hope.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour8.jpg",
+      "featured": true
+    },
+    {
+      "title": "New York City Walking Tour",
+      "city": "New York",
+      "address": "Times Square, New York, USA",
+      "distance": 100,
+      "price": 60,
+      "maxGroupSize": 15,
+      "desc": "Walk through the bustling streets of NYC, visiting iconic spots like Times Square, Central Park, and Broadway.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour9.jpg",
+      "featured": false
+    },
+    {
+      "title": "European Highlights Tour",
+      "city": "Multiple Cities",
+      "address": "Starts in Paris, France, and ends in Rome, Italy",
+      "distance": 1500,
+      "price": 3000,
+      "maxGroupSize": 30,
+      "desc": "A comprehensive tour covering iconic European cities like Paris, Amsterdam, Berlin, and Rome.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour11.jpg",
+      "featured": true
+    },
+    {
+      "title": "Grand USA Road Trip",
+      "city": "Multiple Cities",
+      "address": "Starts in New York and ends in San Francisco, USA",
+      "distance": 3000,
+      "price": 5000,
+      "maxGroupSize": 20,
+      "desc": "An exciting journey across the USA, visiting landmarks like the Grand Canyon, Las Vegas, and Golden Gate Bridge.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour12.jpg",
+      "featured": false
+    },
+    {
+      "title": "South American Wonders",
+      "city": "Multiple Cities",
+      "address": "Starts in Rio de Janeiro, Brazil, and ends in Lima, Peru",
+      "distance": 2500,
+      "price": 4000,
+      "maxGroupSize": 15,
+      "desc": "Explore South America's natural wonders and vibrant cities, including Iguazu Falls, Machu Picchu, and the Amazon Rainforest.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour13.jpg",
+      "featured": false
+    },
+    {
+      "title": "Best of Australia and New Zealand",
+      "city": "Multiple Cities",
+      "address": "Starts in Sydney, Australia, and ends in Auckland, New Zealand",
+      "distance": 1800,
+      "price": 4500,
+      "maxGroupSize": 20,
+      "desc": "A thrilling tour covering Australia's Great Barrier Reef and New Zealand's stunning landscapes.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour14.jpg",
+      "featured": true
+    },
+    {
+      "title": "Scandinavian Adventure",
+      "city": "Multiple Cities",
+      "address": "Starts in Stockholm, Sweden, and ends in Copenhagen, Denmark",
+      "distance": 800,
+      "price": 2500,
+      "maxGroupSize": 25,
+      "desc": "Explore the scenic beauty and culture of Scandinavia, including Norway's fjords and Denmark's castles.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour15.jpg",
+      "featured": false
+    },
+    {
+      "title": "Mediterranean Cruise",
+      "city": "Multiple Cities",
+      "address": "Starts in Barcelona, Spain, and ends in Athens, Greece",
+      "distance": 1200,
+      "price": 4000,
+      "maxGroupSize": 50,
+      "desc": "Sail through the Mediterranean, stopping at stunning coastal cities like Nice, Rome, and Santorini.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour16.jpg",
+      "featured": true
+    },
+    {
+      "title": "Caribbean Island Hopping",
+      "city": "Multiple Islands",
+      "address": "Starts in Nassau, Bahamas, and ends in San Juan, Puerto Rico",
+      "distance": 900,
+      "price": 3000,
+      "maxGroupSize": 20,
+      "desc": "Hop through the vibrant and tropical Caribbean islands, enjoying white sandy beaches and crystal-clear waters.",
+      "reviews": [],
+      "photo": "/tour-images/new_tour17.jpg",
+      "featured": true
+    }
+  
+  ]
+  
