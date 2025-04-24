@@ -6,11 +6,11 @@ import { motion } from 'framer-motion'
 import '../style/home.css'
 
 const fadeImg = {
-  hidden: { opacity: 0, x: -300 , rotateX: 180},
+  hidden: { opacity: 0, x: -300},
   visible: {
     opacity: 1,
     x: 0,
-    rotateX: 0,
+  
   },
 }
 const Masonygallery = () => {
