@@ -1,0 +1,109 @@
+
+.admin-div {
+    display: flex;
+    height: 89vh;
+    width: 100%;
+    position: relative;
+    background-color: #151a27;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(24, 29, 83, 0.679);
+    overscroll-behavior: none;
+}
+
+#main-div {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sidebar-div {
+    height: 100%;
+    width: 255px;
+    overflow-y: auto;
+    position: relative;
+    
+}
+
+
+.sidebar {
+    width: 100%;
+    background-color: #1e1e2f;
+}
+
+#content-div {
+    width: 85%;
+    height: auto;
+    overflow-y: auto;
+}
+
+.admin-content {}
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 60px;
+    background-color: #1e1e2f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.chart-container {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    /* Adjust for screen size */
+}
+
+
+
+/* Extra Css */
+aside.ps-sidebar-root{
+    border: none;
+}
+li.ps-menuitem-root:hover {
+    border-right: 6px solid #7e86fb;
+}
+
+
+a#MenuIconId.ps-menu-button:hover {
+   color:  #2e3c5af6;
+}
+#MenuIconId:hover{
+    background: transparent;
+}
+
+
+
+#eachMenu.ps-menu-button{
+    width: 100%;
+    padding-left: 28px;
+}
+#eachMenu:hover{
+    background-color: #263551bf;
+    color: #868dfb;
+}
+#eachMenu.ps-menu-button.ps-active .ps-menu-label {
+    color: #868dfb;
+}
+#eachMenu.ps-menu-button.ps-active .ps-menu-icon {
+    color: #868dfb;
+}
+/* SIDEBAR END */
+
+
+/* .admin-div::-webkit-scrollbar{
+    display: none;
+} */
+#sidebar-div::-webkit-scrollbar {
+    display: none;
+
+}
+
+#content-div::-webkit-scrollbar {
+    display: none;
+}

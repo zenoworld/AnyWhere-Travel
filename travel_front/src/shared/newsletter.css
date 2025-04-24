@@ -1,0 +1,119 @@
+.newsletter {
+    padding: 0;
+    margin-top: 3rem;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 47px;
+    background: linear-gradient(145deg, #18232b, #252f37, #18232b);
+    box-shadow: 20px 20px 89px #25323b,
+        -20px -20px 89px #293843;
+
+}
+
+.newsletter-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter__img {
+    width: 600px;
+    height: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.newsletter__img img {
+    width: 95%;
+    border-radius: 20px;
+}
+
+.newsletter__content {
+    padding: 50px 0;
+    color: white;
+    width: 600px;
+    position: relative;
+}
+
+.newsletter__content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.newsletter__input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 20px;
+
+}
+
+.newsletter__input input {
+    font-size: 1rem;
+    color: var(--heading-color);
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #1d6165af;
+    width: 100%;
+    padding: 10px 0px 10px 5px;
+}
+
+.newsletter__input input::placeholder {
+    color: #1f8a90;
+}
+
+.newsletter__input input:focus {
+    border: 1px solid #1d6165af;
+
+}
+
+.newsletter__input textarea {
+    width: 100%;
+    height: 100px;
+    background: none;
+    padding: 10px 0px 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #1d6165af;
+}
+
+.newsletter__input textarea::placeholder {
+    color: #1f8a90;
+}
+
+.newsletter__btn {
+    padding: 0.5rem 1.5rem !important;
+    background: red !important;
+    color: #fff !important;
+    font-size: 1.1rem !important;
+    width: 100%;
+}
+
+.newsletter__content p {
+    color: var(--heading-color);
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width:992px) {
+    .newsletter__content h2 {
+        font-size: 2rem;
+    }
+
+    .newsletter__img {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:576px) {
+    .newsletter__content h2 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter__content p {
+        display: none;
+    }
+}

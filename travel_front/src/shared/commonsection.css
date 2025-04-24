@@ -1,0 +1,16 @@
+.commonsection{
+    background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('../data/image/tour-img05.jpg')  ;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    object-fit: cover;
+}
+.commonsection h1{
+    font-size: 5rem;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}

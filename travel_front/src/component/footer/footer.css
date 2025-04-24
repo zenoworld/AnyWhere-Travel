@@ -1,0 +1,41 @@
+.footer{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    /* background-color: rgb(182, 178, 178); */
+}
+.footer .logo img{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+.footer .logo p{
+    color: white;
+
+}
+.social__links span a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.footer__link-title{
+    color: #ffeba7;
+    margin-bottom: 1rem;
+    padding-top: 40px;
+    
+
+}
+.footer__quick-links h6 span{
+    color: black;
+    font-size: 1.1rem;
+    
+}
+
+.footer__quick .list-group-item {
+    background-color: transparent;
+    color: white; /* Optionally, change text color */
+}
+.footer__quick .foot a{
+    color: white;
+    text-decoration: none;
+}
