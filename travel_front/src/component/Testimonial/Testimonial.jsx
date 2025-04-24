@@ -45,7 +45,7 @@ const Testimonial = () => {
                 <img src={ava01} alt='avatar1' className='w-25 h-25 rounded-2' />
                 <div >
                     <h5 className='name mb-0 mt-3 '>Subhro Majumder</h5>
-                    <p>Customer</p>
+                    <p>Client</p>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@ const Testimonial = () => {
                 <img src={ava02} alt='avatar2' className='w-25 h-25 rounded-2' />
                 <div >
                     <h5 className='name mb-0 mt-3 '>Aditya Bose</h5>
-                    <p>Customer</p>
+                    <p>Client</p>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@ const Testimonial = () => {
                 <img src={ava03} alt='avatar3' className='w-25 h-25 rounded-2' />
                 <div >
                     <h5 className='name mb-0 mt-3 '>Tamal Saha</h5>
-                    <p>Customer</p>
+                    <p>Client</p>
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@ const Testimonial = () => {
                 <img src={ava03} alt='avatar3' className='w-25 h-25 rounded-2' />
                 <div >
                     <h5 className='name mb-0 mt-3 '>Abhishek Gorain</h5>
-                    <p>Customer</p>
+                    <p>Client</p>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@ const Testimonial = () => {
                 <img src={ava03} alt='avatar3' className='w-25 h-25 rounded-2' />
                 <div >
                     <h5 className='name mb-0 mt-3 '>Sanju Majumder</h5>
-                    <p>Customer</p>
+                    <p>Client</p>
                 </div>
             </div>
         </div>
