@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css'
 import { Container, Row, Col, ListGroup, ListGroupItem, } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import logo from '../../data/image/logo20.jpg';
+import logo from '/logo.jpg';
 
 const quick_link = [
   {
