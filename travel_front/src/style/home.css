@@ -82,13 +82,13 @@
 }
 
 .hero__content h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 600;
     background: linear-gradient(to right, #2e84a5, #3bb9eb, #1e586e, #0b2732);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     position: relative;
-    line-height: 110px;
+    line-height: 100px;
 }
 .hero__content .hell1{
     display: flex;
@@ -145,7 +145,7 @@
 }
 
 .hero__content p {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     color: white;
     line-height: 2rem;
     width: 630px;
@@ -163,7 +163,7 @@
 }
 
 .hero__content {
-    padding-top: 3.5rem;
+    padding-top: 2rem;
 
 }
 
