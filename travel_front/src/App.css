@@ -5,7 +5,7 @@
   --primary-color:rgb(149, 159, 249);
   --secondary-color:rgb(123, 132, 207);
   --bg-color:white;
-  --heading-color: #077878;
+  --heading-color: #7feaea;
   --text-color: #6e7074;
   --font-name: "Montserrat", sans-serif;
   --subtitle-font-name: "Island Moments", cursive;
@@ -20,6 +20,7 @@
  body {
   font-family: var(--font-name);
   overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch; /* For iOS Safari compatibility */
 } 
 
 section {
