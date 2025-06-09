@@ -127,7 +127,6 @@ export const userRegister = async (req, res) => {
     }
     catch (error) {
         res.status(500).json({ success: false, message: "fail to create" })
-
     }
 }
 

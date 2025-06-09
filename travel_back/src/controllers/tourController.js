@@ -5,8 +5,7 @@ export const createTour = async (req, res) => {
     try {
         const newTour = new Tour({
             ...req.body,
-            remainingSlots: req.body.maxGroupSize,
-            reviews: []
+            remainingSlots: req.body.maxGroupSize
         });
         console.log(newTour);
         const savedTour = await newTour.save();
@@ -16,7 +15,6 @@ export const createTour = async (req, res) => {
         console.error("Error creating tour:", error);
         res.status(500).json({ success: false, message: "Failed to create tour. Please try again later." });
     }
-
 }
 
 //update tour 
@@ -87,8 +85,7 @@ export const getAllTour = async (req, res) => {
             data: tours,
         })
     } catch (err) {
-        res.status(404).json({ success: false, message: "not found" });
-
+        res.status(404).json({ success: false, message: "not found"  });
     }
 };
 
