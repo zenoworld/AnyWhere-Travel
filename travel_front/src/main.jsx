@@ -14,7 +14,10 @@ const App = lazy(() => import('./App.jsx'));
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AuthContextProvider>
-      <BrowserRouter>
+      <BrowserRouter
+        future={{
+          v7_relativeSplatPath: true,
+        }}>
         <Suspense fallback={<div className="lazy_loading">Loading App...</div>}>
           <App />
         </Suspense>

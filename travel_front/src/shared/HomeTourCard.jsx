@@ -26,7 +26,7 @@ const navigateTour = () =>{
                         <i class="ri-map-pin-line"></i>{city}
                     </span>
                     <span className='tour__rating d-flex align-items-center gap-1'>
-                        <i class="ri-star-fill"></i>{avgRating === 0 ? null : avgRating}
+                        ⭐{avgRating === 0 ? null : avgRating}
                         {totalRating === 0 ?("not rated"): (<span>({reviews.length})</span>)}
                     </span>
                 </div>

@@ -11,7 +11,7 @@ const ToureCard = ({ tour }) => {
     const {user} = useContext(AuthContext)
 
     const { _id, title, city, photo, 
-        pricePerDay, featured, reviews } = tour
+        pricePerDay, featured,reviews} = tour
     const { totalRating, avgRating } = calculateAvgRating(reviews)
 
 
@@ -25,10 +25,10 @@ const ToureCard = ({ tour }) => {
             <CardBody>
                 <div className='card__top d-flex align-items-center justify-content-between'>
                     <span className='tour__location d-flex align-items-center gap-1'>
-                        <i class="ri-map-pin-line"></i>{city}
+                        <i className="ri-map-pin-line"></i>{city}
                     </span>
                     <span className='tour__rating d-flex align-items-center gap-1'>
-                        <i class="ri-star-fill"></i>{avgRating === 0 ? null : avgRating}
+                        <i className="ri-star-fill"></i>{avgRating === 0 ? null : avgRating}
                         {totalRating === 0 ?
                             ("not rated")
                             : (<span>({reviews.length})</span>)}

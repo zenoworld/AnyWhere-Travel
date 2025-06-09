@@ -33,7 +33,7 @@ const Searchbar = () => {
         <div className='search__bar '>
             <Form className='d-flex align-items-center gap-4'>
                 <FormGroup className='d-flex gap-3 form__group form__group-fast'>
-                    <span><i class="ri-map-pin-line"></i></span>
+                    <span><i className="ri-map-pin-line"></i></span>
                     <div>
                         <h6 className='hello1'><b>Location</b></h6>
                         <input list="place" placeholder='where is your destination' ref={locationRef} />
@@ -50,21 +50,21 @@ const Searchbar = () => {
                     </div>
                 </FormGroup>
                 <FormGroup className='d-flex gap-3 form__group form__group-fast'>
-                    <span><i class="ri-map-pin-time-line"></i></span>
+                    <span><i className="ri-map-pin-time-line"></i></span>
                     <div>
                         <h6 className='hello1'><b>Distance</b></h6>
                         <input type='number' placeholder='distance km/hrs' ref={distanceRef} />
                     </div>
                 </FormGroup>
                 <FormGroup className='d-flex gap-3 form__group form__group-last'>
-                    <span><i class="ri-group-line"></i></span>
+                    <span><i className="ri-group-line"></i></span>
                     <div>
                         <h6 className='hello1'><b>Max people</b></h6>
                         <input type='number' placeholder='0' ref={maxGroupSizeRef} />
                     </div>
                 </FormGroup>
                 <button className='search__icon' type="submit" onClick={searchHandler}>
-                <i class="ri-search-line"></i>Search
+                <i className="ri-search-line"></i>Search
                 </button>
                 {/* <span className='search__icon' type="submit" onClick={searchHandler}>
                     <i class="ri-search-line"></i>
