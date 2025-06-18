@@ -10,10 +10,10 @@ const Testimonial = () => {
         dots: true,
         infinite: true,
         autoplay: true,
-        speed: 2000,
+        speed: 3000,
         swipeToSlide: true,
         autoplaySpeed: 2000,
-        slidesToShow:3,
+        slidesToShow: 3,
         responsive: [
             {
                 breakpoint: 992,
@@ -33,12 +33,12 @@ const Testimonial = () => {
             },
         ],
     };
-    
-    return <Slider {...settings}>
+
+    return <Slider className='slider' {...settings}>
         <div className='testimonial py-4 px-3'>
             <p>Open-source neutral-style system symbols elaborately crafted
-             for designers and developers.
-                All of the icons are free for both personal and commercial 
+                for designers and developers.
+                All of the icons are free for both personal and commercial
                 use.
             </p>
             <div className='d-flex align-items-center gap-4 mt-3 '>
@@ -51,8 +51,8 @@ const Testimonial = () => {
         </div>
         <div className='testimonial py-4 px-3'>
             <p>Open-source neutral-style system symbols elaborately crafted
-             for designers and developers.
-                All of the icons are free for both personal and commercial 
+                for designers and developers.
+                All of the icons are free for both personal and commercial
                 use.
             </p>
             <div className='d-flex align-items-center gap-4 mt-3 '>
@@ -65,8 +65,8 @@ const Testimonial = () => {
         </div>
         <div className='testimonial py-4 px-3'>
             <p>Open-source neutral-style system symbols elaborately crafted
-             for designers and developers.
-                All of the icons are free for both personal and commercial 
+                for designers and developers.
+                All of the icons are free for both personal and commercial
                 use.
             </p>
             <div className='d-flex align-items-center gap-4 mt-3 '>
@@ -79,8 +79,8 @@ const Testimonial = () => {
         </div>
         <div className='testimonial py-4 px-3'>
             <p>Open-source neutral-style system symbols elaborately crafted
-             for designers and developers.
-                All of the icons are free for both personal and commercial 
+                for designers and developers.
+                All of the icons are free for both personal and commercial
                 use.
             </p>
             <div className='d-flex align-items-center gap-4 mt-3 '>
@@ -93,8 +93,8 @@ const Testimonial = () => {
         </div>
         <div className='testimonial py-4 px-3'>
             <p>Open-source neutral-style system symbols elaborately crafted
-             for designers and developers.
-                All of the icons are free for both personal and commercial 
+                for designers and developers.
+                All of the icons are free for both personal and commercial
                 use.
             </p>
             <div className='d-flex align-items-center gap-4 mt-3 '>

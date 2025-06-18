@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
@@ -14,23 +14,22 @@ import Weather from '../pages/Weather';
 
 const Router = () => {
   return (
- 
     <Routes>
       <Route path='/' element={<Navigate to='/home' />} />
       <Route path='/home' element={<Home />} />
       <Route path='/about' element={<About />} />
       <Route path='/tour' element={<Tour />} />
       <Route path='/tour/:id' element={<TourDetail />} />
+
       <Route path='/login' element={<Login />} />
       <Route path='/register' element={<Register />} />
       <Route path='/tour/search' element={<Searchlist />} />
       <Route path='/thankyou' element={<Thankyou />} />
       <Route path='/paystack' element={<PayStack />} />
       <Route path='/adminpage/*' element={<AdminPage />} />
-      <Route path='/weather' element={<Weather/>} />
+      <Route path='/weather' element={<Weather />} />
     </Routes>
-   
   );
-}
+};
 
-export default Router
+export default Router;

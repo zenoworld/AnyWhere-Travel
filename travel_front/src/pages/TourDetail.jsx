@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import calculateAvgRating from '../utils/calculateAvgRating';
-import Booking from "../component/Booking/Booking";
 import useFetch from "../hooks/useFetch";
 import { BASE_URL } from "../utils/config";
 import { AuthContext } from "./../context/AuthContext";
@@ -15,6 +14,8 @@ import Stack from '@mui/material/Stack';
 import '../style/tourdetail.css'
 import ReviewContainer from "../component/reviewContainer/ReviewContainer";
 import Loading from "../component/loading/Loading";
+import Booking from "../pages/Booking";
+// import Review from "../component/reviewContainer/Review";
 
 
 const TourDetail = () => {
@@ -23,6 +24,7 @@ const TourDetail = () => {
   const reviewMSgRef = useRef('');
   const [tourRating, setTourRating] = useState(0);
   const [reviewOpen, setReviewOpen] = useState(false);
+  const [bookingContainerOpen, setBookingContainerOpen] = useState(false)
 
   const { user } = useContext(AuthContext)
 
@@ -87,7 +89,8 @@ const TourDetail = () => {
         {error && <h4 className="text-center pt-5">{error}</h4>}
 
         {
-          !loading && !error && <Row>
+          !loading && !error && <Row className="row_tour">
+
             <Col lg='8' className='tour__detail_left'>
               <div className='tour__content'>
 
@@ -97,7 +100,7 @@ const TourDetail = () => {
                   className='tour__info'>
 
                   <h2 className="d-flex ">
-                    {title}<span className='tour__rating d-flex align-items-center gap-1 mx-4'>
+                    {title}<span className='tour__rating_simple d-flex align-items-center gap-1 mx-4'>
                       <i className="ri-star-fill" style={{ 'color': "gold" }}></i>
                       {avgRating === 0 ? "0 Reviews" : avgRating}
                       {totalRating === 0 ?
@@ -145,10 +148,9 @@ const TourDetail = () => {
 
                   </div>
 
-                  <h5>Description</h5>
-                  <p>{desc}</p>
+                  {/* <h5>Description</h5>
+                  <p>{desc}</p> */}
                 </motion.div>
-
 
                 <motion.div
                   initial={{ opacity: 0, x: -550 }}
@@ -196,18 +198,6 @@ const TourDetail = () => {
                   </Form>
 
 
-                  {
-                    reviewOpen && (
-                      <div className="review_section">
-                        <div className="review_section_inner">
-                          <div onClick={() => setReviewOpen(!reviewOpen)} className="close_review">
-                            <span>X</span>
-                          </div>
-                          <ReviewContainer id={id} />
-                        </div>
-                      </div>
-                    )
-                  }
 
 
                 </motion.div>
@@ -215,10 +205,61 @@ const TourDetail = () => {
               </div>
             </Col>
 
+            <Col lg='4' className='tour__detail_right'>
+              <div className='descSection'>
+                <div className='image_div'>
+                  <img src={photo} alt='tourPic' />
+                </div>
 
-            <Col lg='4'>
-              <Booking tour={tour} avgRating={avgRating} />
+                <div className='descSection_div'>
+                  <div>
+                    <h5>Description</h5>
+                    <p>
+                      {desc}
+                    </p>
+                  </div>
+
+                  <Button
+                    onClick={() => setBookingContainerOpen(!bookingContainerOpen)} variant="contained"
+                    color="primary"
+                    className="mt-3">
+                    Book You Destination
+                  </Button>
+                </div>
+              </div>
             </Col>
+
+            {
+              reviewOpen && (
+                <div className="absolute_section">
+                  <div className="review_section_inner">
+                    <div
+                      onClick={() => setReviewOpen(!reviewOpen)}
+                      className="close_review"
+                    >
+                      <span>X</span>
+                    </div>
+                    <ReviewContainer id={id} />
+                  </div>
+                </div>
+              )
+            }
+
+            {
+              bookingContainerOpen &&
+              <div className="absolute_section">
+                <div className="booking_section_inner">
+                  <div
+                    onClick={() => setBookingContainerOpen(!bookingContainerOpen)}
+                    className="close_review"
+                  >
+                    <span>X</span>
+                  </div>
+                  <Booking tour={tour} />
+                </div>
+              </div>
+            }
+            
           </Row>
         }
       </Container>

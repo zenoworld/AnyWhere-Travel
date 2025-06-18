@@ -1,6 +1,13 @@
 .testimonial p{
     color: white;
+    
 }
 .name{
     color: #ffeba7;
+}
+.testimonial{
+    background: linear-gradient(to right , #111924ed,#182634ab,#172129ed,transparent);
+    margin: 0 5px;
+    border-radius: 10px;
+
 }

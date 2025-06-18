@@ -20,13 +20,11 @@ const Searchbar = () => {
             return alert('All field must be filled');
         }
 
-
         const res = await fetch(`${BASE_URL}/tour/search/getTourBySearch?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`);
 
         if (!res.ok) alert('something went wrong')
         const result = await res.json()
         navigate(`/tour/search?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`, { state: result.data });
-
 
     }
     return <>
@@ -64,11 +62,9 @@ const Searchbar = () => {
                     </div>
                 </FormGroup>
                 <button className='search__icon' type="submit" onClick={searchHandler}>
-                <i className="ri-search-line"></i>Search
+                    {/* <i className="ri-search-line"></i> */}
+                    Search Plan
                 </button>
-                {/* <span className='search__icon' type="submit" onClick={searchHandler}>
-                    <i class="ri-search-line"></i>
-                </span> */}
             </Form>
         </div>
     </>

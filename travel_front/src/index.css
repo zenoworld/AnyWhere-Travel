@@ -73,7 +73,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #212a31 !important;
+  background-color: #161c22 !important;
   overscroll-behavior: none;
   overflow-x: hidden;
   /* #17202a #1b2631*/
@@ -83,7 +83,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.lazy_loading{
+
+.lazy_loading {
   width: 100vw;
   height: 100vh;
   display: flex;

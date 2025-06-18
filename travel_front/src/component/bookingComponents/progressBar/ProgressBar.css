@@ -1,0 +1,83 @@
+.progressbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 12px;
+}
+
+.circle {
+  width: 32px;
+  height: 32px;
+  background-color: #cfcfd1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.circle.active {
+  background-color: #ff7851;
+  color: white;
+}
+
+.circle.completed {
+  background-color: #ff7851;
+  color: white;
+}
+
+.check-icon {
+  font-size: 20px;
+}
+
+.label {
+  color: #b4b4cc;
+  font-weight: 600;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.label.active {
+  color: #ff7851;
+}
+
+.bar {
+  width: 80px;
+  height: 3px;
+  background-color: #cfcfd1;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(50%) translateY(-50%);
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.bar.filled {
+  background-color: #ff7851;
+}
+
+@media (max-width: 767px) {
+  .bar {
+    width: 40px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+}

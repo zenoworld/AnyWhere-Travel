@@ -1,0 +1,117 @@
+.step-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #1a1a2e;
+  padding: 24px 32px;
+  border-radius: 12px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px !important;
+  margin-bottom: 24px;
+}
+
+.form-payment label {
+  display: flex;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #f36c42;
+  align-items: start;
+}
+
+.form-payment input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2a2a3e;
+  color: white;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.form-payment input::placeholder {
+  color: #aaa;
+}
+.consent-checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  
+}
+.consent-checkbox p{
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+#checkBox{
+  width: 15px;
+  height: 15px;
+  background-color: #f36c42;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.consent_margin{
+  margin: 0 5px;
+  color: #ff7851;
+}
+.payment-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.payment-col {
+  flex: 1;
+}
+
+.form-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 14px 28px;
+  font-weight: 700;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 16px;
+  min-width: 140px;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #ff7851;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #e56c43;
+}
+
+.btn-secondary {
+  background-color: #44475a;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #3a3a52;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .payment-row {
+    flex-direction: column;
+  }
+  .form-nav-buttons {
+    flex-direction: column;
+  }
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    min-width: auto;
+  }
+}

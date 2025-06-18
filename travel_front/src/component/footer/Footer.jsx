@@ -18,6 +18,20 @@ const quick_link = [
     display: 'Tour'
   },
 ];
+const quick_link1 = [
+  {
+    path: '/about',
+    display: 'About Us'
+  },
+  {
+    path: '/',
+    display: 'News'
+  },
+  {
+    path: '/',
+    display: 'Faq'
+  },
+];
 const quick_link02 = [
 
   {
@@ -42,38 +56,24 @@ const Footer = () => {
 
   return <footer className='footer'>
     <Container>
-      <Row>
+      <Row className='row1'>
+
         <Col lg='3'>
-          <div className='logo'>
-            <img src={logo} alt='...' />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor </p>
-            <div className='social__links d-flex  align-items-center gap-4'>
-              <span>
-                <Link to='#'>
-                  <i class="ri-youtube-line"></i>
-                </Link>
-              </span>
-              <span>
-                <Link to='#'>
-                  <i class="ri-github-fill"></i>
-                </Link>
-              </span>
-              <span>
-                <Link to='#'>
-                  <i class="ri-facebook-circle-line"></i>
-                </Link>
-              </span>
-              <span>
-                <Link to='#'>
-                  <i class="ri-instagram-line"></i>
-                </Link>
-              </span>
-            </div>
-          </div>
+          <h5 className='footer__link_title'>Company</h5>
+          <ListGroup className='footer__quick'>
+            {
+              quick_link1.map((item, index) => (
+                <ListGroupItem key={index} className='foot ps-0 border-0'>
+                  <Link to={item.path}>{item.display}</Link>
+                </ListGroupItem>
+              ))
+            }
+
+          </ListGroup>
         </Col>
 
         <Col lg='3'>
-          <h5 className='footer__link-title'>Discover</h5>
+          <h5 className='footer__link_title'>Discover</h5>
           <ListGroup className='footer__quick'>
             {
               quick_link.map((item, index) => (
@@ -86,7 +86,7 @@ const Footer = () => {
           </ListGroup>
         </Col>
         <Col lg='3'>
-          <h5 className='footer__link-title'>Quick Links</h5>
+          <h5 className='footer__link_title'>Quick Links</h5>
           <ListGroup className='footer__quick'>
             {
               quick_link02.map((item, index) => (
@@ -98,33 +98,38 @@ const Footer = () => {
 
           </ListGroup>
         </Col>
+
+
         <Col lg='3'>
-          <h5 className='footer__link-title'>Contact</h5>
+
+          <h5 className='footer__link_title'>Contact</h5>
           <ListGroup className='footer__quick'>
             <ListGroupItem className='foot ps-0 border-0 d-flex align-items-center gap-3'>
               <h6 className='mb-0 d-flex align-items-center gap-2'>
                 <span>
                   <i class="ri-map-pin-line"></i>
                 </span>
-                Address:
+                Address
               </h6>
               <p className='mb-0'>XYZ,INDIA</p>
             </ListGroupItem>
+
             <ListGroupItem className='foot ps-0 border-0 d-flex align-items-center gap-3'>
               <h6 className='mb-0 d-flex align-items-center gap-2'>
                 <span>
                   <i class="ri-mail-line"></i>
                 </span>
-                Email:
+                Email
               </h6>
               <p className='mb-0'>fourarms@gmail.com</p>
             </ListGroupItem>
+
             <ListGroupItem className='foot ps-0 border-0 d-flex align-items-center gap-3'>
               <h6 className='mb-0 d-flex align-items-center gap-2'>
                 <span>
                   <i class="ri-phone-fill"></i>
                 </span>
-                Phone no:
+                Phone no
               </h6>
               <p className='mb-0'>8697366627</p>
             </ListGroupItem>
@@ -133,6 +138,34 @@ const Footer = () => {
 
         </Col>
       </Row>
+
+
+      <div className='footer_bottom'>
+        <h2>© 2025. All rights reserved</h2>
+        <div className='social__links d-flex  align-items-center gap-4'>
+          <span>
+            <Link to='#'>
+              <i class="ri-youtube-line"></i>
+            </Link>
+          </span>
+          <span>
+            <Link to='#'>
+              <i class="ri-github-fill"></i>
+            </Link>
+          </span>
+          <span>
+            <Link to='#'>
+              <i class="ri-facebook-circle-line"></i>
+            </Link>
+          </span>
+          <span>
+            <Link to='#'>
+              <i class="ri-instagram-line"></i>
+            </Link>
+          </span>
+        </div>
+      </div>
+
     </Container>
   </footer>
 }

@@ -29,16 +29,17 @@ const Tour = () => {
     <motion.section
       initial={{ opacity: 0, x: -450 }}
       animate={{ opacity: 1, x: 0, transition: { duration: 0.6, ease: 'easeInOut' } }}
+      className='searchbar_section'
     >
-      <Container >
+      
         <Searchbar />
-      </Container>
+      
     </motion.section>
 
-    <motion.section 
+    <motion.section
       initial={{ opacity: 0, y: 250 }}
       animate={{ opacity: 1, y: 0, transition: { duration: 1, ease: 'easeInOut' } }}
-    className='pt-0'>
+      className='pt-0'>
       <Container>
 
         {loading && <h4 className='text-center pt-5'>Loading.....</h4>}

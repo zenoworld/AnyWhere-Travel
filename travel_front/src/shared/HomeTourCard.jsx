@@ -1,8 +1,8 @@
 import React from 'react'
 import { Card, CardBody } from 'react-bootstrap'
-import { Link ,useNavigate} from 'react-router-dom'
-import './tour-card.css';
+import { Link, useNavigate } from 'react-router-dom'
 import calculateAvgRating from '../utils/calculateAvgRating';
+import './tour-card.css';
 
 const HomeToureCard = ({ tour }) => {
 
@@ -10,34 +10,39 @@ const HomeToureCard = ({ tour }) => {
     const { totalRating, avgRating } = calculateAvgRating(reviews)
 
     const navigate = useNavigate()
-const navigateTour = () =>{
-    navigate('/tour')
-}
+    const navigateTour = () => {
+        navigate('/tour')
+    }
 
-    return <div className='tour__card'>
-        <Card onClick={navigateTour}>
-            <div className='tour__img'>
-                <img src={photo} alt='...' />
-                {featured && <span>Featured</span>}
-            </div>
-            <CardBody>
-                <div className='card__top d-flex align-items-center justify-content-between'>
+    return <Card className="tour-card-with-bg">
+        <div
+            className="bg-image"
+            style={{ backgroundImage: `url(${photo})` }}
+        />
+        <div className="bg-shadow-overlay" />
+
+        <div className='card__top'>
+            <span className='tour__rating d-flex align-items-center gap-1'>
+                ⭐{avgRating === 0 ? null : avgRating}
+                {totalRating === 0 ? ("0 reviews") : (<span>({reviews.length})</span>)}
+            </span>
+            {featured && <span className='featured'>Featured</span>}
+        </div>
+
+        <CardBody>
+            <div className='card__bottom'>
+                <h5 className='tour__title'><Link to={`/tour/${_id}`}>{title}</Link></h5>
+                <div className='card__bottom_inner_div'>
                     <span className='tour__location d-flex align-items-center gap-1'>
-                        <i class="ri-map-pin-line"></i>{city}
+                        <i className="ri-map-pin-line"></i>{city}
                     </span>
-                    <span className='tour__rating d-flex align-items-center gap-1'>
-                        ⭐{avgRating === 0 ? null : avgRating}
-                        {totalRating === 0 ?("not rated"): (<span>({reviews.length})</span>)}
-                    </span>
+                    <button className='btn_hover_tour' onClick={navigateTour}>
+                        <img src='/right.png' alt='right' />
+                    </button>
                 </div>
-                <h5 className='tour__title'><Link to={`/tour/${_id}`} >{title}</Link></h5>
-
-                <div className='card__bottom d-flex ai align-items-center justify-content-between mt-3'>
-                    <h5>${pricePerDay} <span>/per person</span></h5>
-                </div>
-            </CardBody>
-        </Card>
-    </div>
+            </div>
+        </CardBody>
+    </Card>
 
 
 }

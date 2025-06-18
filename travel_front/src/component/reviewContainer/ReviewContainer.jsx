@@ -3,8 +3,8 @@ import avatar from '../../data/image/avatar.jpg'
 import useFetch from '../../hooks/useFetch'
 import { BASE_URL } from "../../utils/config";
 import { ListGroup } from 'react-bootstrap';
-import '../../style/tourdetail.css'
 import Loading from '../loading/Loading';
+import '../../style/tourdetail.css'
 
 
 const ReviewContainer = ({ id }) => {

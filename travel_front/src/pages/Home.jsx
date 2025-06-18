@@ -75,13 +75,16 @@ const Home = () => {
       viewport={{ once: false }}
       className="home-sec1 mb-5"
     >
+      <div className='home_overlay'></div>
       <div className="hero__content">
+
         <motion.h1
           initial={{ opacity: 0, x: -350 }}
           animate={{ opacity: 1, x: 0, transition: { duration: 0.8, ease: 'easeInOut' } }}
         >
-          <span className="hell">TRAVEL BEYOND LIMITS</span>
+          <span className="hell">TRAVEL BEYOND LIMITS </span>
         </motion.h1>
+
         <motion.div
           initial={{ opacity: 0, x: -150 }}
           animate={{ opacity: 1, x: 0, transition: { duration: 1, ease: 'easeInOut' } }}
@@ -98,9 +101,7 @@ const Home = () => {
         >
           Embark on your next adventure with ease! Discover breathtaking
           destinations, plan unforgettable experiences, and book your dream
-          tours—all in one place. Whether you're seeking tranquil getaways,
-          thrilling excursions, or cultural explorations, we make travel
-          simple, seamless, and stress-free. Start your journey today and let
+          tours—all in one place.
           your wanderlust lead the way!
         </motion.p>
         {user ? "" :
@@ -114,11 +115,7 @@ const Home = () => {
     </motion.section>
 
     {/* Services Section */}
-    <motion.section
-      variants={upSlide}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false }}
+    <section
       className='serviceList_section'
     >
       <Container className='serviceList_container'>
@@ -130,6 +127,7 @@ const Home = () => {
             viewport={{ once: false }}
           >
             <h3 className="services__subtitle">Know before You go</h3>
+            <h2 className="services__title">We Offer Our<span>Best Services</span></h2>
             <div className='earth_container'>
               <div className='earth'>
                 <img src={worldImg} alt='world' />
@@ -139,7 +137,6 @@ const Home = () => {
               </div>
             </div>
 
-            <h2 className="services__title">We Offer our best Services</h2>
           </motion.div>
 
         </Row>
@@ -154,7 +151,7 @@ const Home = () => {
           </div>
         </motion.div>
       </Container>
-    </motion.section>
+    </section>
 
     {/* Featured Tours Section */}
     <motion.section
@@ -167,7 +164,7 @@ const Home = () => {
       <Container>
         <Row>
           <Col lg="12" className="mb-5">
-            <Subtitle Subtitle="Explore" className="subtitle-explore" />
+            <Subtitle Subtitle="Popular Tours" className="subtitle-explore" />
             <h2 className="featured__tour-title">Our featured tours</h2>
           </Col>
           <FeaturedTourList />
@@ -204,7 +201,7 @@ const Home = () => {
               className="experience__content">
               <Subtitle Subtitle="Experience" className="subtitle-experience" />
               <h2 className="hello">
-                With all our experience <br /> we will serve you{' '}
+                With all our experience <br /> <span>we will serve you</span>{' '}
               </h2>
               <p>
                 Open-source neutral-style system symbols elaborately <br />
@@ -246,7 +243,7 @@ const Home = () => {
         <Row>
           <Col lg="12">
             <Subtitle Subtitle="Gallery" className="subtitle-gallery" />
-            <h2 className="gallery__title">Visit our client tour gallery</h2>
+            <h2 className="gallery__title">Visit Our Client's<br /> <span>Tour Gallery</span></h2>
           </Col>
         </Row>
         <Masonygallery />
@@ -265,7 +262,7 @@ const Home = () => {
           <Col lg="12">
             <Subtitle Subtitle="Fans love" className="subtitle-fans-love" />
             <h2 className="testimonial__title">
-              What our travelers say about us
+              What People Have Said<br /> <span>About Our Service</span>
             </h2>
           </Col>
           <Col lg="12">
@@ -282,8 +279,16 @@ const Home = () => {
       whileInView="visible"
       viewport={{ once: false }}
     >
-
-      <NewsLetter />
+        <Row>
+          <Col lg="12">
+            <Subtitle Subtitle="Send Love" className="subtitle-fans-love" />
+            <h2 className="testimonial__title">
+              Send Tour Experience<br /> <span>With Us</span>
+            </h2>
+          </Col>
+        </Row>
+          <NewsLetter />
+     
     </motion.section>
   </>
 }

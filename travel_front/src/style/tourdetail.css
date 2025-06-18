@@ -1,7 +1,33 @@
+.tour__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row_tour {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tour__detail_left {}
+
+.tour__detail_right {
+    display: flex;
+    justify-content: end;
+}
+
 .tour__content img {
     width: 100%;
     border-radius: .5rem;
     margin-bottom: 2.5rem;
+}
+
+.tour__rating_simple {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
 }
 
 .tour__info,
@@ -32,7 +58,6 @@
 
 .tour__extra-details {
     margin-top: 1rem;
-    margin-bottom: 1.8rem;
 }
 
 .tour__info h5 {
@@ -49,14 +74,20 @@
 
 .rating__group span {
     font-size: 1.1rem;
+    font-weight: 600;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    border-radius: 5px;
+    background-color: #32475a;
+    border: 1px solid #75838e;
+    padding: 2px 8px;
 }
 
 
-.blue-star{
-     color: goldenrod;
+.blue-star {
+    color: goldenrod;
 }
 
 .review__input {
@@ -101,13 +132,7 @@
     }
 }
 
-
-
-.tour__detail_left {
-    overflow-y: auto;
-}
-
-.review_section {
+.absolute_section {
     position: fixed;
     top: 0;
     left: 0;
@@ -122,11 +147,21 @@
 
 .review_section_inner {
     width: 45%;
-    max-height: 90%;
+    max-height: 95%;
     overflow-y: auto;
     border-radius: 20px;
     position: relative;
     background-color: #283949;
+    padding: 20px 20px;
+}
+
+.booking_section_inner {
+    width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1d2327;
     padding: 20px 20px;
 }
 
@@ -140,7 +175,6 @@
     -webkit-backdrop-filter: blur(10px);
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-
 }
 
 .user__reviews {
@@ -148,12 +182,11 @@
 }
 
 .close_review {
+    position: sticky;
+    top: 0;
     color: #aeacac;
     display: flex;
     justify-content: end;
-    margin-bottom: 20px;
-    position: sticky;
-    top: 0;
     cursor: pointer;
 }
 
@@ -163,6 +196,13 @@
     border-radius: 50%;
     border: 3px solid #aeacac;
     padding: 2px 10px;
+}
+.close_review:hover{
+    color: #fff;
+}
+.close_review:hover span{
+    border-color: #fff;
+
 }
 
 .review__item {
@@ -174,19 +214,20 @@
     border-radius: 20px;
     padding: 10px 20px;
     position: relative;
-    background: linear-gradient(to right , #206db1a0 , #33618f , #1c6cb2,#12518fac);
+    background: linear-gradient(to right, #206db1a0, #33618f, #1c6cb2, #12518fac);
 }
 
-.review__item_left{
+.review__item_left {
     width: 10%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.review__item_right{
+
+.review__item_right {
     width: 90%;
-    
+
 }
 
 .review__item_left img {
@@ -224,6 +265,62 @@
     font-size: larger;
 }
 
-::-webkit-scrollbar {
+
+/* BOOKING SECTION CALL */
+.descSection {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: sticky;
+    top: 80px;
+    background: linear-gradient(to right, #172733, #304454, #172733);
+    border: 2px solid rgb(56, 67, 92);
+}
+
+.image_div {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-color: rgba(0, 0, 0, 0.179);
+}
+
+.image_div img {
+    width: 100%;
+    border-radius: 5px;
+    background-position: center;
+    object-fit: contain;
+}
+
+.descSection_div {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.8rem 0.7rem;
+    background-color: rgba(0, 0, 0, 0.179);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.descSection_div h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.descSection_div p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: azure;
+}
+
+.booking_section_inner::-webkit-scrollbar{
     display: none;
 }

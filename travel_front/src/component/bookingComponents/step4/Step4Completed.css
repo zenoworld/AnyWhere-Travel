@@ -1,0 +1,95 @@
+.completed_step_container {
+  /* max-width: 700px; */
+  width: 70%;
+  margin: 0 auto;
+  /* background-color: #36434d; */
+  padding: 10px 10px;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.completed_div_left {
+  width: 45%;
+  background-color: rgb(44, 47, 47);
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+
+.completed_div_right {
+  width: 45%;
+  background-color: #283038fb;
+  padding: 20px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.completed_div_right_tourname {
+  display: flex;
+  justify-content: start;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.completed_div_right_tourname i {
+  margin-right: 10px;
+}
+
+.completed_div_right_thankyou {
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  color: #b3afaf;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.completed_div_right_contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+  color: #b3afaf;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.completed_div_right_contact_title {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.completed_div_right_contact_title img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+
+.completed-icon {
+  font-size: 64px !important;
+  color: #16e167;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 28px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+p {
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.5;
+}
